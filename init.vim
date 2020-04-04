@@ -12,11 +12,14 @@ set nobackup
 set noswapfile
 set autoread
 set autowrite
+set whichwrap+=<,>,[,] " https://stackoverflow.com/a/2574203
+set backspace=indent,eol,start " same as above
 
 " UI
 set mouse=a
 set termguicolors
 set cursorline
+set cursorcolumn
 set nowrap
 set novisualbell
 set noerrorbells
@@ -46,6 +49,12 @@ set magic
 " Keymap
 
 let mapleader=" "
+imap <C-P> <Up>
+imap <C-F> <Right>
+imap <C-N> <Down>
+imap <C-B> <Left>
+imap <C-A> <Home>
+imap <C-E> <End>
 
 " Plugin
 if has('nvim')

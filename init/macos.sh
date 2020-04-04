@@ -2,7 +2,7 @@
 set -xe
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-brew install fish fzf tmux p7zip mosh python node yarn neovim reattach-to-user-namespace
+brew install fish fzf tmux p7zip mosh python node yarn neovim reattach-to-user-namespace tldr
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # https://opensource.com/article/19/4/gpg-subkeys-ssh
