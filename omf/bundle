@@ -1,0 +1,4 @@
+package foreign-env
+package https://github.com/jethrokuan/fzf
+theme default
+theme edan
