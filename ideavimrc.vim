@@ -1,6 +1,7 @@
-let mapleader=","
+let mapleader=" "
 set surround
 set easymotion
+set commentary
 set clipboard=unnamedplus " https://stackoverflow.com/a/8757876
 
 set whichwrap+=<,>,[,] " https://stackoverflow.com/a/2574203
@@ -13,3 +14,8 @@ imap <C-B> <Left>
 imap <C-A> <Home>
 imap <C-E> <End>
 imap <C-D> <Del>
+nmap <Tab> <Leader><Leader>
+vmap <Tab> <Leader><Leader>
+nmap <Leader>/ gcc
+xmap <Leader>/ gc
+omap <Leader>/ gc

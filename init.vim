@@ -48,13 +48,16 @@ set magic
 
 " Keymap
 
-let mapleader=","
+let mapleader=" "
 imap <C-P> <Up>
 imap <C-F> <Right>
 imap <C-N> <Down>
 imap <C-B> <Left>
 imap <C-A> <Home>
 imap <C-E> <End>
+imap <C-D> <Del>
+nmap <Tab> <Leader><Leader>
+vmap <Tab> <Leader><Leader>
 
 " Plugin
 if has('nvim')
