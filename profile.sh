@@ -7,7 +7,7 @@ export VISUAL=nvim
 
 CARGO_HOME="$HOME/.cargo"
 if [[ -d "$CARGO_HOME" ]]; then
-    export PATH="$CARGO_HOME:$PATH"
+    export PATH="$CARGO_HOME/bin:$PATH"
 fi
 if [[ -x "$(command -v yarn)" ]]; then
     export PATH="$(yarn bin):$PATH"

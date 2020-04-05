@@ -5,54 +5,57 @@
     "editor.fontSize": 15,
     "editor.fontLigatures": true,
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
-    "terminal.integrated.shell.linux": "/usr/local/bin/fish",
     "terminal.integrated.automationShell.osx": "/bin/sh",
     "terminal.integrated.automationShell.linux": "/bin/sh",
     "[plaintext]": {
-        "editor.fontLigatures": false
+        "editor.fontLigatures": false,
     },
     "[javascript]": {
-        "editor.fontLigatures": "'JSPT'"
+        "editor.fontLigatures": "'JSPT'",
     },
     "[typescript]": {
-        "editor.fontLigatures": "'JSPT'"
+        "editor.fontLigatures": "'JSPT'",
     },
     "[swift]": {
-        "editor.fontLigatures": "'SWFT'"
+        "editor.fontLigatures": "'SWFT'",
     },
     "[php]": {
-        "editor.fontLigatures": "'PHPX'"
+        "editor.fontLigatures": "'PHPX'",
     },
     "[idris]": {
-        "editor.fontLigatures": "'IDRS'"
+        "editor.fontLigatures": "'IDRS'",
     },
     "[haskell]": {
-        "editor.fontLigatures": "'HSKL'"
+        "editor.fontLigatures": "'HSKL'",
     },
     "[elm]": {
-        "editor.fontLigatures": "'ELMX'"
+        "editor.fontLigatures": "'ELMX'",
     },
     "[purescript]": {
-        "editor.fontLigatures": "'PURS'"
+        "editor.fontLigatures": "'PURS'",
     },
     "[fsharp]": {
-        "editor.fontLigatures": "'FSHP'"
+        "editor.fontLigatures": "'FSHP'",
     },
-    "vim.leader": "<space>",
+    "vim.leader": ",",
     "vim.useSystemClipboard": true,
     "vim.incsearch": true,
     "vim.hlsearch": true,
     "vim.sneak": true,
     "vim.sneakReplacesF": true,
     "vim.sneakUseIgnorecaseAndSmartcase": true,
-    "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-e>": false,
-        "<C-f>": false,
-        "<C-b>": false,
-        "<C-n>": false,
-        "<C-p>": false
-    },
+    "vim.insertModeKeyBindingsNonRecursive": [
+        { "before": ["<C-a>"], "after": ["<Esc>", "I"] },
+        { "before": ["<C-e>"], "after": ["<Esc>", "A"] },
+        { "before": ["<C-f>"], "after": ["<Right>"] },
+        { "before": ["<C-b>"], "after": ["<Left>"] },
+        { "before": ["<C-n>"], "after": ["<Down>"] },
+        { "before": ["<C-p>"], "after": ["<Up>"] },
+        { "before": ["<C-d>"], "after": ["<Del>"] }
+    ],
     "workbench.colorTheme": "Night Owl",
-    "open-in-vim.useNeovim": true
+    "open-in-vim.useNeovim": true,
+    "vim.easymotion": true,
+    "vim.easymotionMarkerFontSize": "13",
+    "vim.easymotionMarkerFontFamily": "Sarasa Mono SC"
 }
