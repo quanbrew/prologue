@@ -22,3 +22,4 @@ ln -sfn (rel init.vim)
 cd $HOME/.config
 rm -rf omf
 ln -sfn (rel omf)
+omf install
