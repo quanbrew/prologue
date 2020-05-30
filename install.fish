@@ -20,4 +20,5 @@ mkdir -p $HOME/.config/nvim
 cd $HOME/.config/nvim
 ln -sfn (rel init.vim)
 cd $HOME/.config
+rm -rf omf
 ln -sfn (rel omf)
