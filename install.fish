@@ -5,7 +5,7 @@ function rel
     set current (realpath .)
     set p $DIR/$argv[1]
     # https://stackoverflow.com/a/7305217
-    python -c "import os.path; print os.path.relpath('$p', '$current')"
+    python3 -c "import os.path; print os.path.relpath('$p', '$current')"
 end
 
 cd $HOME
